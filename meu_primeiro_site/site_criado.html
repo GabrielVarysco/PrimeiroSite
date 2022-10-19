@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site google glass</title>
+    
+    <link rel="stylesheet" type="text/css" href="estilos_do_site.css">
+
+</head>
+<script language="javascript" src="funcoes.js"></script>
+<body>
+<div id=interface>
+    <header id="cabecalho">
+    <h1 id=>Google Glass</h1>
+    <h2>Tudo sobre o Google Glass</h2>
+ 
+    <img id="oculos" src="imagens/GoogleGlass.png" width="300px">
+
+    <nav id="menu">
+        <h1>Menu Principal</h1>
+        <!--<ol> listas ordenadas type: 1,a,I,i start: (numero)
+            <ul> listas não ordenadas type: square, circle, disc-->
+    <ol>
+        <li onmouseover="mudafoto('imagens/icone-casa.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="site_criado.html">Home</a></li>
+        <li onmouseover="mudafoto('imagens/engrenagem.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="especificacoes.html">Especificações</a></li>
+        <li onmouseover="mudafoto('imagens/camera.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="fotos.html"> Fotos </a></li>
+        <li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="multimidia.html"> Multimidia </a></li>
+        <!--<ul>
+            <li>Músicas</li>
+            <li>Vídos</li>
+        </ul> -->
+        <li onmouseover="mudafoto('imagens/telefone.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="fale_conosco.html"> Fale conosco </a></li>
+    </ol>
+    </nav>
+    </header>
+    
+    <section id="corpo">
+    <article id="noticia-principal">
+    
+    <header id="cabecalho-artigo">
+    <h3>Tecnologia</h3>
+    <h1>Saiba tudo sobre o Google Glass</h1>
+    <!--Se não adicionar o target="_blank" o link vai fechar a pagina e abrir o link no lugar, mas se tiver o target o link vai ser aberto em outra guia -->
+    <h2>Por <a href="https://www.instagram.com/varysco/" target="_blank">Gabriel Varysco</a></h2>
+    </header>
+
+    <h2>O que é?</h2>
+    <p></span> </p>
+
+<figure class="foto_legenda">
+    <img src="imagens/GoogleGlass.png" width="300px">
+    <figcaption>
+        <h3>Google Glass</h3>
+        <p>Uma nova maneira de ver o mundo</p>
+    </figcaption>
+</figure>
+    <h2>Dada de lançamento</h2>
+    <p>A data de lançamento ainda n foi confirmada mas esperamos que seja logo</p>
+
+    <h2>Especificações Técnicas</h2>
+    <table id="tabela1">
+    <caption>Tabela tecnica do google glass</caption>
+
+    <tr><td class="esquerda">tela</td><td class="direita">resolução equivalente a tela de 25"</td></tr>
+    <tr><td rowspan="2" class="esquerda">camera</td><td class="direita">5mp para fotos</td></tr>
+    <tr><td class="direita">720p para videos</td></tr>
+    <tr><td rowspan="2" class="esquerda">conectividade</td> <td class="direita"> wifi</td> </tr>
+    <tr><td class="direita">bluetooth</td></tr>
+    <tr><td class="esquerda">memoria interna</td><td class="direita">12gb</td></tr>
+    </table>
+    
+    <h2>como funciona</h2>
+    <p>Nós não podemos falar muitos detalhes técnicos mas falando de uma maneira simples, o display joga as imagens para a lende do óculos que, por sua vez, reflete e expande nela mesma, trazendo uma imagem grande e em alta resolução que podemos enxergar bem mesmo de perto</p>
+    <h2>oq tu pode fazer com o google glass</h2>
+    <p>Com o google glass você pode fazer tanto coisas simples como ver as horas, o clima e os próximos voos marcados do dia como também coisas complicadas como marcar reuniões de trabalhos, verificar sua agenda online e fazer video chamadas com quem você quiser e de onde você quiser.</p>
+    <h2>video:</h2>
+    <div id="tv-radio">
+        <video id="filme2" controls poster="imagens/video-mini03.jpg">
+            <source src="imagens/getting-started.mp4" type="video/mp4"/>
+            Desculpe, ocorreu um erro ao carregar o video
+        </video>
+    </div>
+    </article>
+    </section>
+
+    <aside id="lateral">
+        <h1>Outras notícias</h1>
+        <h2>Video mais recente</h2>
+        <div id="tv-radio">
+            <video id="filme2" controls poster="imagens/video-mini03.jpg">
+                <source src="imagens/getting-started.mp4" type="video/mp4"/>
+                Desculpe, ocorreu um erro ao carregar o video
+            </video>
+        </div>
+
+    </aside>
+
+    <footer id="rodape">
+    <p>Copyright &copy;2022 - by Gabriel Varysco <br>
+    <a href="https://twitter.com/Clouborets" target="_blank">Twitter</a> | 
+    <a href="https://www.instagram.com/varysco/" target="_blank">Instagram</a>
+    </p>
+    </footer>
+
+
+<!--
+<pre>
+<code>
+#include &lt;iostream&gt;
+int main() {
+    count << "Google Glass!";
+    return 0;
+}
+
+tag &lt;pre&gt; faz contabilizar todos os espaços e enters
+que colocar
+</code>
+</pre>
+-->
+
+
+</div>
+</body>
+</html>

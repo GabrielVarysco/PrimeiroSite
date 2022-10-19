@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site google glass</title>
+    
+    <link rel="stylesheet" type="text/css" href="estilos_do_site.css">
+    <link rel="stylesheet" type="text/css" href="fale_conosco.css">
+    <script lang="javascript" src="funcoes.js"></script>
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('cQtd').value);
+            tot = qtd * 1500;
+            document.getElementById('cTot').value = tot;
+        }
+
+    </script>
+
+</head>
+<script language="javascript" src="funcoes.js"></script>
+<body>
+<div id=interface>
+    <header id="cabecalho">
+    <h1 id=>Google Glass</h1>
+    <h2>Tudo sobre o Google Glass</h2>
+ 
+    <img id="oculos" src="imagens/GoogleGlass.png" width="300px">
+
+    <nav id="menu">
+        <h1>Menu Principal</h1>
+        <!--<ol> listas ordenadas type: 1,a,I,i start: (numero)
+            <ul> listas não ordenadas type: square, circle, disc-->
+    <ol>
+        <li onmouseover="mudafoto('imagens/icone-casa.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="site_criado.html">Home</a></li>
+        <li onmouseover="mudafoto('imagens/engrenagem.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="especificacoes.html"> Especificações </a></li>
+        <li onmouseover="mudafoto('imagens/camera.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="fotos.html"> Fotos </a></li>
+        <li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="multimidia.html"> Multimidia </a></li>
+        <!--<ul>
+            <li>Músicas</li>
+            <li>Vídos</li>
+        </ul> -->
+        <li onmouseover="mudafoto('imagens/telefone.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="fale_conosco.html"> Fale conosco </a></li>
+    </ol>
+    </nav>
+    </header>
+
+    <form method="post" id="fContato" action="" oninput="calc_total();">
+        <fieldset id="usuario"><legend>Identificação</legend>
+            <!--size: quantos caracteres aparecem. maxlength: maximo de caracteres aceitos-->
+            <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+            <p>Senha: <input type="password" name="tSenha" id="cSenha" size="20" maxlength="16" placeholder="16 digitos"></p>
+            <p>E-mail: <input type="email" name="tMail" id="cMail" size="40" maxlength="40" placeholder="Email"></p>
+            <fieldset id="sexo"><legend>Sexo:</legend>
+                <!--Quando os "radio" forem do msm grupo devem ter o msm name-->
+                <input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label><br>
+                <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+            </fieldset>
+            <p>Data de Nascimento: <input type="date" name="tNasc"></p>
+        </fieldset>
+
+        <fieldset id="endereço"><legend>Endereço</legend>
+            <p>Rua:<input type="text" name="tRua" id="cRua" size="20" maxlength="50"></p>
+            <p>Número: <input type="number" name="tNumero" id="cNumero" size="6" min="0" max="999999"></p>
+            <p>Estado: <select name="tEst" id="cEst">
+                <option value="rj">Rio de Janeiro</option>
+                <option value="sp">São Paulo</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="pr">Parana</option>
+                <option value="mg">Minas Gerais</option>
+            </select></p>
+            <p>Cidade: <input type="text" name="tCid" id="cCid" maxlength="40" size="30" placeholder="Cidade" list="cidade"></p>
+            <datalist id="cidades">
+                <option value="Rio de Janeiro"></option>
+                <option value="Porto Alegre"></option>
+                <option value="Nova iguaçu"></option>
+                <option value="Niterói"></option>
+            </datalist>
+        </fieldset>
+
+        <fieldset id="mensagem"><legend>Mensagem</legend>
+            <p>Grau de Urgência: <input type="range" name="tUrg" id="cUrg" min="0" max="10"></p>
+            <p>Mensagem: <textarea name="tMsg" id="cMsg" cols="45" rows="10" placeholder="Sua mensagem:"></textarea></p>
+        </fieldset>
+
+        <fieldset id="pedido"><legend>Quero um GoogleGlass</legend>
+            <p><input type="checkbox" name="tPad" id="cPad"> Gostaria de adquirir um GoogleGlass quando disponível</p>
+            <p>Cor: <input type="color" name="tCor" id="cCor"></p>
+            <p>Quantidade: <input type="number" name="tQtd" id="cQtd" min="0" max="99"></p>
+            <p>Preço total: R$ <input type="text" name="tTot" id="cTot" readonly></p>
+        </fieldset>
+
+        <input type="image" src="imagens/botao-enviar.png">
+
+    </form>
+
+    <footer id="rodape">
+        <p>Copyright &copy;2022 - by Gabriel Varysco <br>
+        <a href="https://twitter.com/Clouborets" target="_blank">Twitter</a> | 
+        <a href="https://www.instagram.com/varysco/" target="_blank">Instagram</a>
+        </p>
+        </footer>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site google glass</title>
+    
+    <link rel="stylesheet" type="text/css" href="estilos_do_site.css">
+    <link rel="stylesheet" type="text/css" href="midia.css">
+
+</head>
+<script language="javascript" src="funcoes.js"></script>
+<body>
+<div id=interface>
+    <header id="cabecalho">
+    <h1 id=>Google Glass</h1>
+    <h2>Tudo sobre o Google Glass</h2>
+ 
+    <img id="oculos" src="imagens/GoogleGlass.png" width="300px">
+
+    <nav id="menu">
+        <h1>Menu Principal</h1>
+        <!--<ol> listas ordenadas type: 1,a,I,i start: (numero)
+            <ul> listas não ordenadas type: square, circle, disc-->
+    <ol>
+        <li onmouseover="mudafoto('imagens/icone-casa.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="site_criado.html">Home</a></li>
+        <li onmouseover="mudafoto('imagens/engrenagem.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="especificacoes.html"> Especificações </a></li>
+        <li onmouseover="mudafoto('imagens/camera.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="fotos.html"> Fotos </a></li>
+        <li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="multimidia.html"> Multimidia </a></li>
+        <!--<ul>
+            <li>Músicas</li>
+            <li>Vídos</li>
+        </ul> -->
+        <li onmouseover="mudafoto('imagens/telefone.png')" onmouseout="mudafoto('imagens/GoogleGlass.png')"><a href="fale_conosco.html"> Fale conosco </a></li>
+    </ol>
+    </nav>
+    </header>
+
+    <div id="tv-radio">
+        <audio id="musica" controls>
+            <source src="imagens/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+            Desculpe, ocorreu um erro ao carregar o áudio
+        </audio>
+        <video id="filme" controls poster="imagens/video-mini03.jpg">
+            <source src="imagens/getting-started.mp4" type="video/mp4"/>
+            Desculpe, ocorreu um erro ao carregar o video
+        </video>
+    </div>
+
+
+
+    <footer id="rodape">
+        <p>Copyright &copy;2022 - by Gabriel Varysco <br>
+        <a href="https://twitter.com/Clouborets" target="_blank">Twitter</a> | 
+        <a href="https://www.instagram.com/varysco/" target="_blank">Instagram</a>
+        </p>
+        </footer>
+    </div>
+    </body>
+    </html>
